@@ -114,8 +114,8 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"];
-pub const RS_PUB_KEY: &str = "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["rustdesk.aosystem.com.br"];
+pub const RS_PUB_KEY: &str = "Q/LjzSJVI1oTGm0p2cP0WgBQcRidtA1aBk+/1U5bfuQ=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
@@ -2838,8 +2838,10 @@ pub fn option2bool(option: &str, value: &str) -> bool {
 }
 
 pub fn use_ws() -> bool {
-    let option = keys::OPTION_ALLOW_WEBSOCKET;
-    option2bool(option, &Config::get_option(option))
+
+    return true;
+    //let option = keys::OPTION_ALLOW_WEBSOCKET;
+    //option2bool(option, &Config::get_option(option))
 }
 
 pub fn allow_insecure_tls_fallback() -> bool {
