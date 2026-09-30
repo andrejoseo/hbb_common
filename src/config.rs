@@ -2838,14 +2838,7 @@ pub fn option2bool(option: &str, value: &str) -> bool {
 }
 
 pub fn use_ws() -> bool {
-<<<<<<< HEAD
     return true; // <--- Adicione esta linha no início da função
-=======
-
-    return true;
->>>>>>> 535c568
-    //let option = keys::OPTION_ALLOW_WEBSOCKET;
-    //option2bool(option, &Config::get_option(option))
 }
 
 pub fn allow_insecure_tls_fallback() -> bool {
